@@ -1,0 +1,7 @@
+/* Navigation section starts */
+@media screen and (min-width: 576px) {
+  .unordered-list {
+    visibility: hidden;
+  }
+}
+/* Navigation section starts */

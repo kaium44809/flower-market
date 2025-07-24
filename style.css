@@ -1,0 +1,65 @@
+/* Google-Font : inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Google-Font : Noto Serif */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+/* Navigation section starts here */
+body {
+  background-color: rgb(229, 233, 217);
+}
+.navigation {
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 200px;
+  border: 2px dashed crimson;
+}
+.flex {
+  display: flex;
+}
+.unorderd-list {
+  /* border: 1px solid red; */
+  padding: 20px;
+  gap: 48px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.img-01 {
+  width: 135px;
+  height: 82px;
+}
+.page-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.home {
+  font-weight: 700;
+}
+/* Navigation section end here */
+
+/* Banner section starts here */
+span {
+  color: rgb(233, 90, 8);
+}
+.title-01 {
+  font-size: 65px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+.title-description-01 {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.flower {
+  font-family: "Noto Serif", serif;
+  border: 2px dashed crimson;
+}
+.sec-01 {
+  margin-bottom: 100px;
+}
+.hero-flower {
+  border: 1px dashed crimson;
+  padding-top: 42px;
+}
+/* Banner section end here */
