@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 /* Navigation section starts here */
 body {
-  background-color: rgb(229, 233, 217);
+  background-color: #f4f7ff;
 }
 .border {
   border: 2px dashed crimson;
@@ -185,9 +185,10 @@ h2 {
   font-weight: 700;
 }
 
-.plant-section .highlight,
-.highlight-02 {
+.plant-section .highlight {
   color: orange;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .plant-section h2 {
@@ -277,7 +278,6 @@ h2 {
   justify-content: center;
   gap: 40px;
   padding: 50px 80px;
-  background-color: #f4f7ff;
   flex-wrap: wrap;
 }
 
@@ -292,20 +292,21 @@ h2 {
   object-fit: cover;
 }
 
-/* Badge */
 .badge {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 100px;
+  top: -120px;
+  right: -90px;
+  width: 250px;
   z-index: 10;
 }
-
-/* Text content */
 .text-content {
   max-width: 550px;
+  gap: 40px;
 }
-
+.title {
+  font-size: 50px;
+  font-weight: 700;
+}
 .text-content h2 {
   font-size: 28px;
   font-weight: 700;
@@ -327,7 +328,7 @@ h2 {
 }
 
 /* Responsive for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .flower-lover {
     flex-direction: column;
     padding: 30px 20px;
@@ -352,11 +353,13 @@ h2 {
 /* Flower & Plants Lover section end here */
 
 /* Latest Deals section starts here */
-/* Default Styles for Desktop */
 .deals-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+  height: 400px;
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .deal-01 {
@@ -391,7 +394,20 @@ h2 {
   border-radius: 10px;
   text-align: center;
 }
-
+.highlight-03 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.latest-deals {
+  text-align: center;
+}
+.title-description-03 {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
 /* Example background images */
 .bloom {
   background-image: url("./assets/deal-bloom.png");
@@ -404,11 +420,13 @@ h2 {
 }
 
 /* Mobile View */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .deals-container {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .title-description-03 {
+    padding: 0px 20px;
+  }
   .deal-01 {
     margin-bottom: 15px;
     font-size: 1em;
@@ -437,7 +455,6 @@ h2 {
 }
 
 .overlay {
-  /* max-width: 700px; */
   margin: 0 auto;
   padding: 40px 20px;
   border-radius: 10px;
@@ -457,15 +474,9 @@ h2 {
 }
 .highlight-02 {
   color: rgb(0, 0, 0);
-  font-size: 28px;
+  font-size: 50px;
   font-weight: 700;
   font-family: "Noto Serif", serif;
-  text-align: center;
-}
-.title-description-03 {
-  font-size: 22px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 .subscribe-form {
@@ -502,11 +513,18 @@ h2 {
 }
 
 /* Responsive */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .subscribe-form {
     flex-direction: column;
   }
-
+  .highlight {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .highlight-02 {
+    font-size: 24px;
+    font-weight: 700;
+  }
   .subscribe-form input[type="email"],
   .subscribe-form button {
     width: 100%;
