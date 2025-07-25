@@ -65,54 +65,90 @@ span {
 /* Banner section end here */
 
 /* Our Plants section starts here */
-.sec-02 {
-  padding-bottom: 100px;
-}
-.our-plants-pd {
+.plant-section {
+  padding: 40px;
+  background-color: #f9fbff;
   text-align: center;
-}
-.title-02 {
-  font-size: 50px;
-  font-weight: 700;
-  font-family: "Noto Serif", serif;
-  color: rgb(0, 0, 0);
-  margin-bottom: 10px;
-}
-.title-description-02 {
-  font-size: 22px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 40px;
-  font-family: "Inter", sans-serif;
-}
-.img-03 {
-  width: 265px;
-  height: 230px;
-}
-.our-plants {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  font-family: sans-serif;
 }
 
-.flower {
-  /* padding-right: 100px; */
-  /* border: 1px dashed red; */
+.plant-section .highlight {
+  color: orange;
 }
-.flower,
-.text {
-  text-align: center;
+
+.plant-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
-.btn {
-  padding: 8px 77px;
-  border: none;
-  background-color: rgb(233, 90, 8);
-  color: white;
-  font-size: 16px;
+
+.plant-section .subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.plant-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.plant-card h4 {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.plant-card p {
+  margin-bottom: 10px;
   font-weight: 600;
 }
+
+.plant-card button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plant-card button:hover {
+  background-color: darkorange;
+}
+/* media query */
+@media screen and (max-width: 768px) {
+  .plant-section {
+    padding: 20px;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plant-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Our Plants section end here */
 
 /* Flower & Plants Lover section starts here */
@@ -146,6 +182,39 @@ li {
 .pd {
   border: 1px dashed crimson;
   margin-left: 40px;
+}
+/* media quary */
+@media screen and (max-width: 768px) {
+  .flower-lover {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img-04 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .sec-03 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .pd {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .title-03 {
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }
 
 /* Flower & Plants Lover section end here */
@@ -223,3 +292,98 @@ li {
 }
 
 /* Latest Deals section end here */
+
+/* Join the colorful Bunch starts here */
+.subscribe-section {
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  /* max-width: 700px; */
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.subscribe-section h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: orange;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+}
+.highlight-02 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+}
+.title-description-03 {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 12px 15px;
+  font-size: 1em;
+  border: none;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+}
+
+.subscribe-form button:hover {
+  background-color: darkorange;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .subscribe-form button {
+    margin-top: 10px;
+  }
+}
+
+/* Join the colorful Bunch end here */
