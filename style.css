@@ -102,7 +102,7 @@ span {
   font-size: 65px;
   font-weight: 700;
   font-family: "Noto Serif", serif;
-  border: 2px dashed crimson;
+  /* border: 2px dashed crimson; */
   /* margin-left: 40px; */
 }
 
@@ -137,7 +137,7 @@ span {
   /* max-width: 400px; */
   height: 380px;
   width: 670px;
-  border: 1px dashed crimson;
+  /* border: 1px dashed crimson; */
 }
 
 /* Responsive Design */
