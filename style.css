@@ -63,3 +63,163 @@ span {
   padding-top: 42px;
 }
 /* Banner section end here */
+
+/* Our Plants section starts here */
+.sec-02 {
+  padding-bottom: 100px;
+}
+.our-plants-pd {
+  text-align: center;
+}
+.title-02 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+.title-description-02 {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+}
+.img-03 {
+  width: 265px;
+  height: 230px;
+}
+.our-plants {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.flower {
+  /* padding-right: 100px; */
+  /* border: 1px dashed red; */
+}
+.flower,
+.text {
+  text-align: center;
+}
+.btn {
+  padding: 8px 77px;
+  border: none;
+  background-color: rgb(233, 90, 8);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Our Plants section end here */
+
+/* Flower & Plants Lover section starts here */
+.flower-lover {
+  gap: 60px;
+}
+.img-04 {
+  height: 550px;
+  width: 490px;
+}
+.sec-03 {
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px dashed crimson;
+}
+.title-03 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-family: "Noto Serif", serif;
+}
+ul li {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  /* gap: 20px; */
+}
+li {
+  color: rgba(0, 0, 0, 0.5);
+}
+.pd {
+  border: 1px dashed crimson;
+  margin-left: 40px;
+}
+
+/* Flower & Plants Lover section end here */
+
+/* Latest Deals section starts here */
+/* Default Styles for Desktop */
+.deals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.deal-01 {
+  grid: 1;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  text-align: center;
+}
+.deal-02 {
+  grid: 1;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  text-align: center;
+  grid-row: span 2;
+}
+.deals-container,
+.deal-03 {
+  grid: 1;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Example background images */
+.bloom {
+  background-image: url("./assets/deal-bloom.png");
+}
+.ana {
+  background-image: url("./assets/deal-ana.png");
+}
+.zabo {
+  background-image: url("./assets/deal-zabo.png");
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .deals-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .deal-01 {
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+  .deal-02 {
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+  .deal-03 {
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+}
+
+/* Latest Deals section end here */
