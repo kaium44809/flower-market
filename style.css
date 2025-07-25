@@ -7,61 +7,170 @@
 body {
   background-color: rgb(229, 233, 217);
 }
-.navigation {
-  /* border: 1px solid red; */
-  justify-content: space-between;
-  font-family: "Inter", sans-serif;
-  padding-bottom: 200px;
+.border {
   border: 2px dashed crimson;
-}
-.flex {
-  display: flex;
-}
-.unorderd-list {
-  /* border: 1px solid red; */
-  padding: 20px;
-  gap: 48px;
-  font-size: 16px;
-  font-weight: 400;
-}
-.img-01 {
-  width: 135px;
-  height: 82px;
-}
-.page-padding {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.home {
-  font-weight: 700;
 }
 /* Navigation section end here */
-
-/* Banner section starts here */
-span {
-  color: rgb(233, 90, 8);
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f6f8fc;
 }
-.title-01 {
-  font-size: 65px;
+.padding {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.navbar {
+  display: flex;
+  padding: 15px 40px;
+  align-items: center;
+  background-color: #f6f8fc;
+  justify-content: space-between;
+}
+.logo img {
+  height: 50px;
+  border: 2px dashed crimson;
+  height: 82px;
+  width: 135px;
+}
+.nav-menu {
+  gap: 50px;
+  display: flex;
+  padding-left: 700px;
+  align-items: flex-end;
+}
+.nav-menu a {
+  color: rgb(137, 135, 161);
+  font-weight: 400;
+  text-decoration: none;
+}
+.nav-menu a.active {
+  color: rgb(37, 36, 50);
   font-weight: 700;
+  font-size: 16px;
+}
+.cart {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.cart img {
+  width: 20px;
+}
+span {
+  font-size: 16px;
+  font-weight: 400;
   color: rgb(0, 0, 0);
 }
-.title-description-01 {
-  font-size: 22px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .cart span {
+    font-size: 14px;
+  }
 }
-.flower {
+
+/* Banner section starts here */
+.fresh-flowers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 50px;
+  background-color: #f5f8ff;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-content h1 {
+  font-size: 65px;
+  font-weight: 700;
   font-family: "Noto Serif", serif;
   border: 2px dashed crimson;
+  /* margin-left: 40px; */
 }
-.sec-01 {
-  margin-bottom: 100px;
+
+.bold {
+  padding-left: 40px;
+  color: #000;
+  font-size: 55px;
+  font-weight: 700;
 }
-.hero-flower {
+
+.orange {
+  font-size: 65px;
+  padding-left: 40px;
+  color: orange;
+}
+
+.text-content p {
+  padding-left: 40px;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #444;
+  font-family: "Inter", sans-serif;
+}
+
+.image-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-content img {
+  width: 100%;
+  /* max-width: 400px; */
+  height: 380px;
+  width: 670px;
   border: 1px dashed crimson;
-  padding-top: 42px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+  .fresh-flowers {
+    flex-direction: column-reverse;
+    padding: 20px;
+    text-align: center;
+  }
+  .bold,
+  .orange {
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .text-content h1 {
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    padding-left: 0%;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .image-content img {
+    max-width: 100%;
+  }
+}
+
 /* Banner section end here */
 
 /* Our Plants section starts here */
@@ -69,10 +178,15 @@ span {
   padding: 40px;
   background-color: #f9fbff;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Noto Serif", serif;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.plant-section .highlight {
+.plant-section .highlight,
+.highlight-02 {
   color: orange;
 }
 
@@ -137,7 +251,11 @@ span {
   .plant-section {
     padding: 20px;
   }
-
+  .highlight,
+  .highlight-02 {
+    font-size: 28px;
+    font-weight: 700;
+  }
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -152,68 +270,82 @@ span {
 /* Our Plants section end here */
 
 /* Flower & Plants Lover section starts here */
+/* Base layout */
 .flower-lover {
-  gap: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 80px;
+  background-color: #f4f7ff;
+  flex-wrap: wrap;
 }
-.img-04 {
-  height: 550px;
-  width: 490px;
+
+.image-container {
+  position: relative;
+  max-width: 450px;
 }
-.sec-03 {
-  padding-left: 100px;
-  padding-right: 100px;
-  border: 1px dashed crimson;
+
+.image-container img:first-child {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
 }
-.title-03 {
-  font-size: 50px;
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  z-index: 10;
+}
+
+/* Text content */
+.text-content {
+  max-width: 550px;
+}
+
+.text-content h2 {
+  font-size: 28px;
   font-weight: 700;
-  color: rgb(0, 0, 0);
   font-family: "Noto Serif", serif;
+  margin-bottom: 20px;
 }
-ul li {
-  font-size: 22px;
-  font-weight: 400;
+
+.text-content ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.text-content li {
+  font-size: 16px;
   font-family: "Inter", sans-serif;
-  /* gap: 20px; */
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
-li {
-  color: rgba(0, 0, 0, 0.5);
-}
-.pd {
-  border: 1px dashed crimson;
-  margin-left: 40px;
-}
-/* media quary */
-@media screen and (max-width: 768px) {
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
   .flower-lover {
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    padding: 30px 20px;
+    text-align: center;
   }
 
-  .img-04 {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .sec-03 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .pd {
-    margin-left: 0;
+  .text-content ul {
+    padding-left: 15px;
+    list-style-position: inside;
     text-align: left;
   }
 
-  .title-03 {
-    font-size: 14px;
+  .text-content h2 {
+    font-size: 24px;
   }
 
-  ul li {
-    font-size: 18px;
-    line-height: 1.6;
+  .badge {
+    display: none;
   }
 }
 
@@ -319,13 +451,13 @@ li {
 
 .highlight {
   color: orange;
-  font-size: 50px;
+  font-size: 28px;
   font-weight: 700;
   font-family: "Noto Serif", serif;
 }
 .highlight-02 {
   color: rgb(0, 0, 0);
-  font-size: 50px;
+  font-size: 28px;
   font-weight: 700;
   font-family: "Noto Serif", serif;
   text-align: center;
@@ -387,3 +519,106 @@ li {
 }
 
 /* Join the colorful Bunch end here */
+
+/* footer section starts here */
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-links {
+  flex: 2 1 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-column a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.link-column a:hover {
+  color: orange;
+}
+
+.footer-social {
+  flex: 1 1 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-social img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-social {
+    width: 100%;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .link-column {
+    width: 100%;
+  }
+}
+
+/* footer section end here */

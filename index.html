@@ -8,41 +8,53 @@
     <link rel="shortcut icon" href="./assets/trusted-badge.png" type="x-icon" />
   </head>
   <body>
-    <header class="page-padding">
-      <div class="navigation flex">
-        <div class="img-01">
-          <img src="./assets/logo.png" alt="" />
+    <header class="page-padding border">
+      <!-- nav -->
+      <header class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Logo" />
         </div>
-        <div class="flex unorderd-list">
-          <p class="home">Home</p>
-          <p>Shop</p>
-          <p>About Us</p>
-          <img class="img-02" src="./assets/shopping-cart.png" />
-          <p>Cart ($56)</p>
+
+        <nav class="nav-menu">
+          <a href="#" class="active">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About us</a>
+        </nav>
+
+        <div class="cart">
+          <img src="./assets/shopping-cart.png" alt="Cart Icon" />
+          <span>Cart ($66)</span>
         </div>
-      </div>
-      <section>
-        <div class="flex flower sec-01">
-          <div>
-            <h1 class="title-01">
-              ALWAYS <span>FRESH<br />FLOWERS</span>
-            </h1>
-            <p class="title-description-01">
-              Indulge your senses with the beauty and fragrance of<br />
-              our fresh flower shop. From classic roses to exotic<br />blooms,
-              we offer a wide variety of fresh flowers that<br />are perfect for
-              any occasion.
-            </p>
-          </div>
-          <div class="hero-flower">
-            <img src="./assets/hero-flower.png" alt="" />
-          </div>
+      </header>
+
+      <!-- nav -->
+      <!-- ALWAYS FRESH section starts here -->
+      <section class="fresh-flowers">
+        <div class="text-content">
+          <h1>
+            <span class="bold">ALWAYS</span>
+            <span class="orange">FRESH</span><br />
+            <span class="orange">FLOWERS</span>
+          </h1>
+          <p>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <div class="image-content">
+          <img src="./assets/hero-flower.png" alt="Fresh Flowers" />
         </div>
       </section>
+
+      <!-- ALWAYS FRESH section end here -->
     </header>
     <!-- Our Plants section starts here -->
     <section class="plant-section">
-      <h2><span class="highlight">Our</span> Plants</h2>
+      <h2>
+        <span class="highlight">Our</span
+        ><span class="highlight-02">Plants</span>
+      </h2>
       <p class="subtitle">
         Indulge your senses with the beauty and fragrance of our fresh flower
         shop. From classic roses to exotic blooms, we offer a wide variety of
@@ -106,33 +118,38 @@
 
     <!-- Our Plants section end here -->
     <!-- Flower & Plants Lover section starts here -->
-    <section class="sec-03">
-      <div class="flower-lover flex">
-        <div>
-          <img class="img-04" src="./assets/flower-store.png" alt="" />
-        </div>
-        <div class="pd">
-          <h1 class="title-03">Flower & Plants<br />Lover</h1>
-          <ul>
-            <li>
-              Indulge your senses with the beauty and<br />fragrance of our
-              fresh flower shop. From classic<br />roses to exotic blooms, we
-              offer a wide variety<br />of fresh.
-            </li>
-            <li>
-              Indulge your senses with the beauty and<br />fragrance of our
-              fresh flower shop. From classic<br />roses to exotic blooms, we
-              offer a wide variety<br />of fresh.
-            </li>
-            <li>
-              Indulge your senses with the beauty and<br />fragrance of our
-              fresh flower shop. From classic<br />roses to exotic blooms, we
-              offer a wide variety<br />of fresh.
-            </li>
-          </ul>
-        </div>
+    <section class="flower-lover">
+      <div class="image-container">
+        <img src="./assets/flower-store.png" alt="Flower Shop Image" />
+        <img
+          class="badge"
+          src="./assets/trusted-badge.png"
+          alt="Trusted Badge"
+        />
+      </div>
+
+      <div class="text-content">
+        <h2>Flower & Plants Lover</h2>
+        <ul>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+        </ul>
       </div>
     </section>
+
     <!-- Flower & Plants Lover section end here -->
     <!-- Latest  Deals section starts here -->
     <section>
@@ -166,5 +183,46 @@
     </section>
 
     <!-- Join the colorful Bunch section end here -->
+    <!-- footer section starts here -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="Logo" />
+          <p>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <div class="link-column">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="link-column">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Help Center</a>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <a href="#"><img src="./assets/icon-linkedin.png" /></a>
+          <a href="#"><img src="./assets/icon-twitter.png" /></a>
+          <a href="#"><img src="./assets/icon-facebook.png" /></a>
+          <a href="#"><img src="./assets/icon-youtube.png" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer section end here -->
   </body>
 </html>
